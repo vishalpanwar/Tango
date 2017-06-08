@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block body_block %}
+    {% if picture %}
+        <img src = "{{ picture }}" height = 40 width = 30>
+        <br>
+    {% endif %}
+
+    {% if website %}
+        <h4>Website: <a href = "{{ website }}">{{ website }}</a></h4>
+    {% endif %}
+{% endblock %}
